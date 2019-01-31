@@ -1,13 +1,64 @@
--<html>
--  <head>
--    <meta charset="utf-8">
--    <title>Caesar Cipher</title>
--    <link rel="stylesheet" href="style.css" />
--  </head>
--  <body>
--    <div id="root">
--      <h1>resiste</h1>
--    </div>
--    <script src="cipher.js"></script>
--    <script src="index.js"></script>
--  </body>
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+     <link rel="stylesheet" href="style.css" />
+  </head>
+
+   <body>
+     <from>
+
+        <h1>resiste</h1>
+        <p> Cifra y Descifra  </p>
+
+
+<!--hago mi id para cifrar el mensaje-->
+    <div id="mensajeCifrado" class="mensajeCifrado">
+<!--Hago un <textarea> con un nombre de id, una clase y un placeholder para poner alli la instruccion-->
+      <textarea id="cajaMensajeCifrar" class="cajaMensajeCifrar" placeholder="INGRESA TU MENSAJE SOLO MAYUSCULAS PLIS..."
+      style="text-transform:uppercase"></textarea>
+<!--hago mi clase de contenido de desplazamiento -->
+        <div class="contenidoDesplazamiento">
+<!--input para obtener mi numero de desplazamient0 -->
+      <input type="number" id="numerOffsetCifrar" class="numerOffsetCifrar_style">
+      </div>
+<!--boton de cifrar mi mensaje-->
+      <button id="botonCifrar" class="botonCifrar">Cifrar tu Mensaje</button>
+<!--me arroja el resultado en un parrafo-->
+      <div id="checarResultado" class="checarResultado">
+<!--id de parrafo con el mensaje cifrado-->
+          <p id="resultadoMensajeCifrado"></p>
+      </div>
+<!--boton de limpiar la consola para volver a cifar-->
+      <button onclick="location.reload();" class="btn_reload">Limpiar</button>
+    </div>
+
+    <!--hago mi id para descifrar el mensaje-->
+        <div id="mensajeCifrado" class="mensajeCifrado">
+    <!--Hago un <textarea> con un nombre de id, una clase y un placeholder para poner alli la instruccion-->
+          <textarea id="cajaMensajeDescifrar" class="cajaMensajeDescifrar" placeholder="INGRESA TU MENSAJE SOLO MAYUSCULAS PLIS..."
+          style="text-transform:uppercase"></textarea>
+    <!--hago mi clase de contenido de desplazamiento -->
+            <div class="contenidoDesplazamientoDescifrar">
+    <!--input para obtener mi numero de desplazamient0 -->
+          <input type="number" id="numerOffsetDescifrar" class="numerOffsetDescifrar_style">
+          </div>
+    <!--boton de cifrar mi mensaje-->
+          <button id="botonDescifrar" class="botonDescifrar">Descifrar tu Mensaje</button>
+    <!--me arroja el resultado en un parrafo-->
+          <div id="checarResultadoDescifrado" class="checarResultadoDescifrado">
+    <!--id de parrafo con el mensaje cifrado-->
+              <p id="resultadoMensajeDescifrado"></p>
+          </div>
+    <!--boton de limpiar la consola para volver a cifar-->
+          <button onclick="location.reload();" class="btn_reload">Limpiar</button>
+        </div>
+
+
+   </from>
+    <div id="root">
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+   </body>
+</html>
