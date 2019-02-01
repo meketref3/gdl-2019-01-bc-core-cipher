@@ -21,5 +21,5 @@ botonTextoDescifrar.addEventListener('click', function() {
     //variable de input de numero para desplazar el mensaje que va a evaluar
     const offsetDescifrar = document.getElementById('numerOffsetDescifrar').value;
     //llama el resultado del cifrado con las variables de textoCifrado y offsetCifrar
-   document.getElementById('resultadoMensajeDescifrado').innerHTML = window.cipher.encode(textoDescifrado, offsetDescifrar);
+   document.getElementById('resultadoMensajeDescifrado').innerHTML = window.cipher.decode(textoDescifrado, offsetDescifrar);
 });
