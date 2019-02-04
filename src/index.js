@@ -8,7 +8,7 @@ botonTextoCifrar.addEventListener('click', function() {
     //variable de input de numero para desplazar el mensaje que va a evaluar
     const offsetCifrar = document.getElementById('numerOffsetCifrar').value;
     //llama el resultado del cifrado con las variables de textoCifrado y offsetCifrar
-   document.getElementById('resultadoMensajeCifrado').innerHTML = window.cipher.encode(textoCifrado, offsetCifrar);
+   document.getElementById('resultadoMensajeCifrado').innerHTML = window.cipher.encode(offsetCifrar, textoCifrado);
 });
 
 
@@ -21,5 +21,5 @@ botonTextoDescifrar.addEventListener('click', function() {
     //variable de input de numero para desplazar el mensaje que va a evaluar
     const offsetDescifrar = document.getElementById('numerOffsetDescifrar').value;
     //llama el resultado del cifrado con las variables de textoCifrado y offsetCifrar
-   document.getElementById('resultadoMensajeDescifrado').innerHTML = window.cipher.decode(textoDescifrado, offsetDescifrar);
+   document.getElementById('resultadoMensajeDescifrado').innerHTML = window.cipher.decode(offsetDescifrar,textoDescifrado);
 });
