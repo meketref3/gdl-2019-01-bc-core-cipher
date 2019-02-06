@@ -44,8 +44,10 @@ window.cipher = {
         }else if (caracter ===32){
            //anade solo el especio
             mensajeCipher = mensajeCipher +' ';
-            //hago una centencia para colocar numeros 
-          }
+            //hago una centencia para colocar numeros
+          }else if(caracter === 241){
+            mensajeCipher = mensajeCipher+'~';
+        }
       }
       //me retormna mi mensajeCipher para que aparezca
       return mensajeCipher;
@@ -84,7 +86,7 @@ window.cipher = {
                            /*utilizo la formula de michell para hacer el desplazamiento, mi variable textoFormula es igual
                            a caracter - 97 (a)+ argumento de tipo cadena con el desplazaminto de lugares que quiero mover mis
                            letras del alfabeto*/
-                           textoFormulaDescifrado = ((caracterDescifrado  - 97 - parseInt(offsetDescifrar)) % 26 + 97);
+                           textoFormulaDescifrado = ((caracterDescifrado  + 59 - parseInt(offsetDescifrar)) % 26 + 97);
                                 //mi almaceno el valor de mi letra cifrada y se convierte en caracter minusculas
                                // y tiene el desplazamiento del usuario
                                nuevaLetraDescifrado = String.fromCharCode(textoFormulaDescifrado);
@@ -94,9 +96,12 @@ window.cipher = {
                      } else if (caracterDescifrado ===32){
                         //anade solo el especio
                          mensajeDescipher = mensajeDescipher +' ';
-            }
-      }
+                         //hago una centencia para colocar numeros para desdescifrarlos
+                      }else if (caracterDescifrado===241){
+                        mensajeDescipher = mensajeDescipher + 'ñ';
+                      }
       //me retormna mi mensajeDipher para que aparezca
+}
       return mensajeDescipher;
     }
 };
