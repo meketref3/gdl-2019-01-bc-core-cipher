@@ -2,15 +2,8 @@ window.cipher = {
   // ...
   //creo mi funcion con los parameros de string y offset
   encode :  (offsetCifrar, textoCifrado) =>{
-      //creo mi variable de mensaje cifrado
-      let mensajeCipher = '';
-      /*hago mi for, mi variable de inicializacion es i=0,
-      es 0 por que va a empezar a contar desde A que es 0,
-      mientras i es menor a la cadena de caracteres que me esta mandando,
-      i va a sumar uno mas.*/
+       let mensajeCipher = '';
       for ( let i = 0; i <  textoCifrado.length; i++) {
-         /*creo mi variable de caracter de tipo string con charCodeAt para que me codifique
-         mi texto a ASCII  y con forme a mi i que esta en mi for*/
          let caracter = textoCifrado.charCodeAt(i);
          //creo mi variable para utilizarla para desplazar mi textoCifrado
          let textoFormula;
@@ -41,13 +34,11 @@ window.cipher = {
                        //mi nuevo nensaje se imprime cifrado en minusculas
                        mensajeCipher= mensajeCipher+nuevaLetra;
           //hago otra sentencia para respetar los espacios.
-        }else if (caracter ===32){
+        }/*else if (caracter ===32){
            //anade solo el especio
             mensajeCipher = mensajeCipher +' ';
             //hago una centencia para colocar numeros
-          }else if(caracter === 241){
-            mensajeCipher = mensajeCipher+'~';
-        }
+          }*/
       }
       //me retormna mi mensajeCipher para que aparezca
       return mensajeCipher;
@@ -93,15 +84,11 @@ window.cipher = {
                                     //mi nuevo nensaje se imprime cifrado en minusculas
                                    mensajeDescipher= mensajeDescipher+nuevaLetraDescifrado;
                        //hago otra sentencia para respetar los espacios.
-                     } else if (caracterDescifrado ===32){
+                     } /*else if (caracterDescifrado ===32){
                         //anade solo el especio
                          mensajeDescipher = mensajeDescipher +' ';
-                         //hago una centencia para colocar numeros para desdescifrarlos
-                      }else if (caracterDescifrado===241){
-                        mensajeDescipher = mensajeDescipher + 'ñ';
-                      }
-      //me retormna mi mensajeDipher para que aparezca
-}
+                      }*/
+    }
       return mensajeDescipher;
     }
 };

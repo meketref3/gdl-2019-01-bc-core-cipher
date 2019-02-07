@@ -4,6 +4,9 @@
 document.getElementById('codificarYdecodificar').classList.add('display_none');
 document.getElementById('mensajeCifrado').classList.add('display_none');
 document.getElementById('mensajeDescifrado').classList.add('display_none');
+document.getElementById('logo').classList.remove('display_block');
+document.getElementById('imagenesDcifrar').classList.add('display_none');
+document.getElementById('imagenPortada').classList.add('display_none');
 //variable de bienvenida.
 const botonTextoNombre=document.getElementById('botoNombre');
 //hacer la funcion para activar el saludo.
@@ -14,10 +17,12 @@ const nombreInput =document.getElementById('nombre').value;
 document.getElementById('darBienvenida').classList.add('display_none');
 document.getElementById('darBienvenida').classList.remove('display_block');
 
-
+document.getElementById('logo').classList.add('display_none');
 //llamar de H1 de darBienvenida
 document.getElementById('resultadoDelNombre').innerHTML = 'Hola '+nombreInput;
 document.getElementById('codificarYdecodificar').classList.add('display_block');
+document.getElementById('imagenPortada').classList.add('display_block');
+
 });
 
 //links de cifrado.
@@ -32,6 +37,8 @@ linkActivar.addEventListener('click',function(){
   document.getElementById('mensajeDescifrado').classList.remove('display_block');
   document.getElementById('mensajeCifrado').classList.add('display_block');
   document.getElementById('mensajeCifrado').classList.add('display_none');
+  document.getElementById('imagenesDcifrar').classList.add('display_block');
+  document.getElementById('imagenPortada').classList.remove('display_block');
 
 });
 
@@ -43,6 +50,9 @@ linkDesactivar.addEventListener('click',function(){
   document.getElementById('mensajeDescifrado').classList.add('display_none');
   document.getElementById('mensajeCifrado').classList.remove('display_block');
   document.getElementById('mensajeCifrado').classList.add('display_none');
+  document.getElementById('imagenesDcifrar').classList.add('display_block');
+  document.getElementById('imagenPortada').classList.remove('display_block');
+
 });
 
 //bloque de cifrado.

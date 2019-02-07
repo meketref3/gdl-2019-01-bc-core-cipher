@@ -14,22 +14,40 @@
    <!--hago mi input de texto para el nombre de usuario-->
            <input type="text" id="nombre" class="nombre"/>
   <!--boton para enviar el nombre de mi ususrio y darle la darBienvenida-->
-          <button id="botoNombre" class="botoNombre">Nombre</button>
-
+          <button id="botoNombre" class="botoNombre"><img src="imagenes/usuario.png"/></button>
         </div>
+        <!--imagen de logo-->
+
   <div id="nombres" class="bienvenidaNombre">
     <!--resultado del nombre-->
-    <h1 id="resultadoDelNombre">Bienvenid@</h1>
+    <h1 id="resultadoDelNombre"></h1>
   </div>
 
+  <div id="logo" class="logo">
+       <img style="position:absolute; LEFT:570px;" src="imagenes/logo.png" width="400"/>
+  </div>
 
 <!--links de cifrado y descifrado.-->
-<div id="codificarYdecodificar" class="linkCodigo">
+<div id="codificarYdecodificar" class="linkCodigo" >
+
     <a href="#" id="linkCodificar" class="linkActivado">Codificar</a>
     <a href="#" id="linkDecodificar">Decodificar</a>
 </div>
 
+<div id="imagenPortada" class="imagenPortada">
+<img style="position:absolute; TOP:305px; RIGHT:10px" src="imagenes/portada.png" width="1600"/>
+</div>
 
+<div id="imagenesDcifrar" class="imagenesDcifrar">
+  <div id="imagenTexto" class="imagenTexto">
+    <img style="position:absolute; TOP:155px; RIGHT:1100px" src="imagenes/texto.png" width="500"/>
+  </div>
+  <div id="imagenTexto1" class="imagenTexto">
+    <img style="position:absolute; TOP:155px; RIGHT:700px" src="imagenes/texto.png" width="500"/>
+  </div>
+  <div id="imagenPunk" class="imagenPunk"><img style="position:absolute; TOP:155px; RIGHT:10px" src="imagenes/mono.png" width="600"/>
+  </div>
+</div>
 <!--hago mi id para cifrar el mensaje-->
     <div id="mensajeCifrado" class="mensajeCifrado">
 <!--Hago un <textarea> con un nombre de id, una clase y un placeholder para poner alli la instruccion-->
@@ -41,7 +59,7 @@
       <input type="number" id="numerOffsetCifrar" class="numerOffsetCifrar_style">
       </div>
 <!--boton de cifrar mi mensaje-->
-      <button id="botonCifrar" class="botonCifrar">Cifrar tu Mensaje</button>
+      <button id="botonCifrar" class="botonCifrar"><img src="imagenes/cif.png"/></button>
 <!--me arroja el resultado en un parrafo-->
       <div id="checarResultado" class="checarResultado">
 <!--id de parrafo con el mensaje cifrado-->
@@ -62,7 +80,7 @@
           <input type="number" id="numerOffsetDescifrar" class="numerOffsetDescifrar_style">
           </div>
     <!--boton de cifrar mi mensaje-->
-          <button id="botonDescifrar" class="botonDescifrar">Descifrar tu Mensaje</button>
+          <button id="botonDescifrar" class="botonDescifrar"><img src="imagenes/descifrar.png"/></button>
     <!--me arroja el resultado en un parrafo-->
           <div id="checarResultadoDescifrado" class="checarResultadoDescifrado">
     <!--id de parrafo con el mensaje cifrado-->

@@ -1,3 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Finger+Paint|Nosifer");
+
+body{
+  background-color:#FFF333;
+}
+.botoNombre{
+  image-orientation: -5px;
+  background-color: #FFF333;
+  width: 200px;
+  height: 50px;
+  box-shadow: 2px 2px 7px 1px #13923B;
+  position: fixed;
+  top: 400px;
+  left: 700px;
+
+}
+.nombre{
+  border-radius: 2px;
+  background-color:#FFF333;
+  width: 30%;
+  padding: 20px;
+  position: fixed;
+  top: 250px;
+  left: 550px;
+  box-shadow: 2px 2px 7px 1px #13923B;
+  font-size: 20px;
+  font-family: "Nosifer";
+  color:#13923B;
+  font-variant-position: super;
+}
+
+.bienvenidaNombre{
+  font-family: "Finger Paint";
+  position: fixed;
+  top: 10px;
+  left: 750px;
+  color: #13923B;
+  text-align: center;
+}
+
+.linkCodigo {
+    width: 100%;
+    font-size: 22px;
+    font-family: "Nosifer";
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.linkCodigo a {
+    text-decoration: none;
+    text-align: center;
+    color: #13923B;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.linkCodigo a:hover {
+    border-bottom: 2px solid #044117;
+    color: #044117;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+.cajaMensajeCifrar{
+  font-family: "Finger Paint";
+  text-align: center;
+  color: #13923B;
+  position: fixed;
+  top: 210px;
+  left: 90px;
+  width: 360px;
+  height: 530px;
+  opacity: 0.7;
+  background-color: #FFF333;
+}
+
+.cajaMensajeDescifrar{
+  font-family: "Finger Paint";
+  text-align: center;
+  color: #13923B;
+  position: fixed;
+  top: 210px;
+  left: 90px;
+  width: 360px;
+  height: 530px;
+  opacity: 0.7;
+  background-color: #FFF333;
+}
+
+.numerOffsetCifrar_style{
+  
+}
+
+
 .display_none {
     display: none;
 }
