@@ -4,7 +4,10 @@ body{
   background-color:#FFF333;
 }
 .botoNombre{
-  image-orientation: -5px;
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: #000000;
+  image-orientation: -8px;
   background-color: #FFF333;
   width: 200px;
   height: 50px;
@@ -15,8 +18,11 @@ body{
 
 }
 .nombre{
-  border-radius: 2px;
+  border-width: 5px;
+  border-radius: 20px;
+  border-color: #000000;
   background-color:#FFF333;
+  text-align: center;
   width: 30%;
   padding: 20px;
   position: fixed;
@@ -26,7 +32,7 @@ body{
   font-size: 20px;
   font-family: "Nosifer";
   color:#13923B;
-  font-variant-position: super;
+
 }
 
 .bienvenidaNombre{
@@ -66,6 +72,7 @@ body{
 .cajaMensajeCifrar{
   font-family: "Finger Paint";
   text-align: center;
+  font-size: 40px;
   color: #13923B;
   position: fixed;
   top: 210px;
@@ -79,6 +86,7 @@ body{
 .cajaMensajeDescifrar{
   font-family: "Finger Paint";
   text-align: center;
+  font-size: 40px;
   color: #13923B;
   position: fixed;
   top: 210px;
@@ -89,10 +97,99 @@ body{
   background-color: #FFF333;
 }
 
+.contenidoDesplazamiento{
+  position: fixed;
+  top: 300px;
+  left: 900px;
+}
 .numerOffsetCifrar_style{
-  
+  width: 70px;
+  font-family: "Finger Paint";
+  font-size: 30px;
+  color: #13923B;
+  background-color: #FFF333;
+  height: 30px;
+}
+.contenidoDesplazamientoDescifrar{
+  position: fixed;
+  top: 300px;
+  left: 900px;
 }
 
+.numerOffsetDescifrar_style{
+  width: 70px;
+  font-family: "Finger Paint";
+  font-size: 30px;
+  color: #13923B;
+  background-color: #FFF333;
+  height: 30px;
+}
+.botonCifrar{
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: #000000;
+  image-orientation: -8px;
+  background-color: #FFF333;
+  width: 150px;
+  height: 50px;
+  box-shadow: 2px 2px 7px 1px #13923B;
+  position: fixed;
+  top: 400px;
+  left: 880px;
+}
+.botonDescifrar{
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: #000000;
+  image-orientation: -8px;
+  background-color: #FFF333;
+  width: 150px;
+  height: 50px;
+  box-shadow: 2px 2px 7px 1px #13923B;
+  position: fixed;
+  top: 400px;
+  left: 880px;
+}
+.checarResultado{
+  font-family: "Finger Paint";
+  text-align: center;
+  font-size: 40px;
+  color: #13923B;
+  position: fixed;
+  top: 190px;
+  left: 480px;
+  width: 360px;
+  height: 530px;
+}
+
+.checarResultadoDescifrado{
+  font-family: "Finger Paint";
+  text-align: center;
+  font-size: 40px;
+  color: #13923B;
+  position: fixed;
+  top: 190px;
+  left: 480px;
+  width: 360px;
+  height: 530px;
+}
+
+.btn_reload{
+  font-family: "Nosifer";
+  text-align: center;
+  font-size: 30px;
+  color: #13923B;
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: #000000;
+  background-color: #FFF333;
+  width: 150px;
+  height: 50px;
+  box-shadow: 2px 2px 7px 1px #13923B;
+  position: fixed;
+  top: 500px;
+  left: 880px;
+}
 
 .display_none {
     display: none;

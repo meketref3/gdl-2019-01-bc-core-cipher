@@ -34,11 +34,11 @@ window.cipher = {
                        //mi nuevo nensaje se imprime cifrado en minusculas
                        mensajeCipher= mensajeCipher+nuevaLetra;
           //hago otra sentencia para respetar los espacios.
-        }/*else if (caracter ===32){
+        }else if (caracter ===32){
            //anade solo el especio
             mensajeCipher = mensajeCipher +' ';
             //hago una centencia para colocar numeros
-          }*/
+          }
       }
       //me retormna mi mensajeCipher para que aparezca
       return mensajeCipher;
@@ -84,10 +84,10 @@ window.cipher = {
                                     //mi nuevo nensaje se imprime cifrado en minusculas
                                    mensajeDescipher= mensajeDescipher+nuevaLetraDescifrado;
                        //hago otra sentencia para respetar los espacios.
-                     } /*else if (caracterDescifrado ===32){
+                     } else if (caracterDescifrado ===32){
                         //anade solo el especio
                          mensajeDescipher = mensajeDescipher +' ';
-                      }*/
+                      }
     }
       return mensajeDescipher;
     }
