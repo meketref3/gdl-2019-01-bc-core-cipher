@@ -8,7 +8,7 @@ body{
   border-radius: 10px;
   border-color: #000000;
   image-orientation: -8px;
-  background-color: #FFF333;
+  background-color: #F2EC98;
   width: 200px;
   height: 50px;
   box-shadow: 2px 2px 7px 1px #13923B;
@@ -16,6 +16,12 @@ body{
   top: 400px;
   left: 700px;
 
+}
+
+.botoNombre:hover{
+  background-color: #FFF333;
+  padding-bottom: 5px;
+  transition: 0.2s;
 }
 .nombre{
   border-width: 5px;

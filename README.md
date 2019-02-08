@@ -1,4 +1,4 @@
-#Haga Fanzine
+##Haga Fanzine
 
  Es una **web app** que no necesita instalarse, solo se necesita conexión a internet,
 utilizando  como base el cifrado cesar.
@@ -32,7 +32,7 @@ comunicación por sí mismos; el cifrado César sí puede formar parte de sistem
 más complejos de codificación, como el cifrado Vigenère, e incluso tiene
 aplicación en el sistema ROT13.
 
-#Haga Fanzine
+##Haga Fanzine
 
 Al entrar al sitio, te pedirá tu nombre de usuario, después eliges si quieres cifrar
 un texto para compartir o quieres descifrar un texto que te compartieron y escoger los espacios
