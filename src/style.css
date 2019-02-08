@@ -51,10 +51,13 @@ body{
 }
 
 .linkCodigo {
-    width: 100%;
+  border-width: 3px;
+  border-radius: 10px;
+  background-color: #000000;
+    width: 50%;
     font-size: 22px;
     font-family: "Nosifer";
-    margin: 0 auto;
+    margin: 0  auto;
     padding: 5px;
     text-align: center;
     margin-top: 100px;
@@ -70,8 +73,8 @@ body{
 }
 
 .linkCodigo a:hover {
-    border-bottom: 2px solid #044117;
-    color: #044117;
+    border-bottom: 4px solid #FFF333;
+    color: #FFF333;
     padding-bottom: 5px;
     transition: 0.3s;
 }
@@ -105,30 +108,30 @@ body{
 
 .contenidoDesplazamiento{
   position: fixed;
-  top: 300px;
+  top: 800px;
   left: 900px;
 }
 .numerOffsetCifrar_style{
-  width: 70px;
+  width: 100px;
   font-family: "Finger Paint";
-  font-size: 30px;
+  font-size: 16px;
   color: #13923B;
   background-color: #FFF333;
-  height: 30px;
+  height: 35px;
 }
 .contenidoDesplazamientoDescifrar{
   position: fixed;
-  top: 300px;
+  top: 800px;
   left: 900px;
 }
 
 .numerOffsetDescifrar_style{
-  width: 70px;
+  width: 100px;
   font-family: "Finger Paint";
-  font-size: 30px;
+  font-size: 16px;
   color: #13923B;
   background-color: #FFF333;
-  height: 30px;
+  height: 35px;
 }
 .botonCifrar{
   border-width: 3px;
@@ -137,11 +140,11 @@ body{
   image-orientation: -8px;
   background-color: #FFF333;
   width: 150px;
-  height: 50px;
+  height: 40px;
   box-shadow: 2px 2px 7px 1px #13923B;
   position: fixed;
-  top: 400px;
-  left: 880px;
+  top: 800px;
+  left: 1060px;
 }
 .botonDescifrar{
   border-width: 3px;
@@ -150,11 +153,11 @@ body{
   image-orientation: -8px;
   background-color: #FFF333;
   width: 150px;
-  height: 50px;
+  height: 40px;
   box-shadow: 2px 2px 7px 1px #13923B;
   position: fixed;
-  top: 400px;
-  left: 880px;
+  top: 800px;
+  left: 1060px;
 }
 .checarResultado{
   font-family: "Finger Paint";
@@ -183,18 +186,18 @@ body{
 .btn_reload{
   font-family: "Nosifer";
   text-align: center;
-  font-size: 30px;
-  color: #13923B;
+  font-size: 20px;
+  color: #FFF333;
   border-width: 3px;
   border-radius: 10px;
   border-color: #000000;
-  background-color: #FFF333;
-  width: 150px;
-  height: 50px;
+  background-color: #000000;
+  width: 120px;
+  height: 40px;
   box-shadow: 2px 2px 7px 1px #13923B;
   position: fixed;
-  top: 500px;
-  left: 880px;
+  top: 800px;
+  left: 1280px;
 }
 
 .display_none {
