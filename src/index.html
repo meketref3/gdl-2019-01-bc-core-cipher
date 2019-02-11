@@ -4,7 +4,7 @@
    <meta charset="utf-8">
     <title>Caesar Cipher</title>
      <link rel="stylesheet" href="style.css" />
-  </head>
+
 
    <body>
      <from>
@@ -22,7 +22,7 @@
   </div>
 <!--imagen de logo-->
   <div id="logo" class="logo">
-       <img style="position:absolute; LEFT:570px;" src="imagenes/logo.png" width="400"/>
+       <img style="position:fixed; left:570px;" src="imagenes/logo.png" width="400"/>
   </div>
 
 <!--links de cifrado y descifrado.-->
@@ -33,12 +33,12 @@
 </div>
 <!--imagen de portada -->
 <div id="imagenPortada" class="imagenPortada">
-<img style="position:absolute; TOP:305px; RIGHT:10px" src="imagenes/portada.png" width="1600"/>
+<img style="position:absolute; top:305px; right:10px" src="imagenes/portada.png" width="1600"/>
 </div>
 <!--imagenes de fondo de cifrar y descifrar-->
 <div id="imagenesDcifrar" class="imagenesDcifrar">
 
-  <div id="imagenPunk" class="imagenPunk"><img style="position:absolute; TOP:155px; RIGHT:10px" src="imagenes/mono.png" width="600"/>
+  <div id="imagenPunk" class="imagenPunk"><img style="position:absolute; top:155px; right:10px" src="imagenes/mono.png" width="600"/>
   </div>
 </div>
 <!--hago mi id para cifrar el mensaje-->
@@ -51,7 +51,7 @@
       <input type="number" id="numerOffsetCifrar" class="numerOffsetCifrar_style" placeholder="#Offset">
       </div>
 <!--boton de cifrar mi mensaje-->
-      <button id="botonCifrar" class="botonCifrar"><img src="imagenes/cif.png" style="position:absolute; TOP:5px; RIGHT:10px"/></button>
+      <button id="botonCifrar" class="botonCifrar"><img src="imagenes/cif.png" style="position:absolute; top:5px; right:10px"/></button>
 <!--me arroja el resultado en un parrafo-->
       <div id="checarResultado" class="checarResultado">
 <!--id de parrafo con el mensaje cifrado-->
@@ -60,7 +60,8 @@
 <!--boton de limpiar la consola para volver a cifar-->
       <button onclick="location.reload();" class="btn_reload">INICIO</button>
 
-      <!--<input type="button" value="enviar" onclick="enviar()" class="enviar"/>-->
+      <input type="button" id="enviar" value="enviar"  class="enviar"/>
+
 
     </div>
 
@@ -91,5 +92,5 @@
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
-
+  </head>
 </html>

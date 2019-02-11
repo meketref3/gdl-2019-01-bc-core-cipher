@@ -81,10 +81,10 @@ botonTextoDescifrar.addEventListener('click', function() {
     //llama el resultado del cifrado con las variables de textoCifrado y offsetCifrar
    document.getElementById('resultadoMensajeDescifrado').innerHTML = window.cipher.decode(offsetDescifrar, textoDescifrado);
 });
-/*
-function enviar() {
-    var link = 'mailto:email@example.com?subject=Haga FANZINE'
+const enviar = document.getElementById('enviar');
+enviar.addEventListener('click', function() {
+    const link = 'mailto:email@example.com?subject=Haga FANZINE'
              +'&body='+document.getElementById('resultadoMensajeCifrado').value;
-             +document.getElementById('numerOffsetCifrar').value;
+             +'&body='+document.getElementById('numerOffsetCifrar').value;
     window.location.href = link;
-}*/
+});
