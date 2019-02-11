@@ -3,7 +3,7 @@
  Es una **web app** que no necesita instalarse, solo se necesita conexión a internet,
 utilizando  como base el cifrado cesar.
 
-![Haga-fanzine](gdl-2019-01-core-cipher/src/imagenes/logo.png)
+![Haga-fanzine](https://github.com/meketref3/gdl-2019-01-bc-core-cipher/blob/master/src/imagenes/logo.png)
 
 ### Cifrado César
 
