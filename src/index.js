@@ -32,7 +32,7 @@ const linkDesactivar = document.getElementById('linkDecodificar');
 //lo que se va a ver y no con los links.
 linkActivar.addEventListener('click',function(){
   document.getElementById('linkCodificar').classList.add('linkActivado');
-  document.getElementById('linkDecodificar').classList.add('linkActivado');
+  document.getElementById('linkDecodificar').classList.add('linkDactivado');
   document.getElementById('mensajeDescifrado').classList.add('display_none');
   document.getElementById('mensajeDescifrado').classList.remove('display_block');
   document.getElementById('mensajeCifrado').classList.add('display_block');
@@ -45,7 +45,7 @@ linkActivar.addEventListener('click',function(){
 //lo que se va a ver y no con los links.
 linkDesactivar.addEventListener('click',function(){
   document.getElementById('linkCodificar').classList.add('linkActivado');
-  document.getElementById('linkDecodificar').classList.add('linkActivado');
+  document.getElementById('linkDecodificar').classList.add('linkDactivado');
   document.getElementById('mensajeDescifrado').classList.add('display_block');
   document.getElementById('mensajeDescifrado').classList.add('display_none');
   document.getElementById('mensajeCifrado').classList.remove('display_block');
@@ -81,3 +81,10 @@ botonTextoDescifrar.addEventListener('click', function() {
     //llama el resultado del cifrado con las variables de textoCifrado y offsetCifrar
    document.getElementById('resultadoMensajeDescifrado').innerHTML = window.cipher.decode(offsetDescifrar, textoDescifrado);
 });
+/*
+function enviar() {
+    var link = 'mailto:email@example.com?subject=Haga FANZINE'
+             +'&body='+document.getElementById('resultadoMensajeCifrado').value;
+             +document.getElementById('numerOffsetCifrar').value;
+    window.location.href = link;
+}*/

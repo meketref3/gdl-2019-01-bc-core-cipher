@@ -37,12 +37,7 @@
 </div>
 <!--imagenes de fondo de cifrar y descifrar-->
 <div id="imagenesDcifrar" class="imagenesDcifrar">
-  <div id="imagenTexto" class="imagenTexto">
-    <img style="position:absolute; TOP:155px; RIGHT:1100px" src="imagenes/texto.png" width="500"/>
-  </div>
-  <div id="imagenTexto1" class="imagenTexto">
-    <img style="position:absolute; TOP:155px; RIGHT:700px" src="imagenes/texto.png" width="500"/>
-  </div>
+
   <div id="imagenPunk" class="imagenPunk"><img style="position:absolute; TOP:155px; RIGHT:10px" src="imagenes/mono.png" width="600"/>
   </div>
 </div>
@@ -56,14 +51,17 @@
       <input type="number" id="numerOffsetCifrar" class="numerOffsetCifrar_style" placeholder="#Offset">
       </div>
 <!--boton de cifrar mi mensaje-->
-      <button id="botonCifrar" class="botonCifrar"><img src="imagenes/cif.png"/></button>
+      <button id="botonCifrar" class="botonCifrar"><img src="imagenes/cif.png" style="position:absolute; TOP:5px; RIGHT:10px"/></button>
 <!--me arroja el resultado en un parrafo-->
       <div id="checarResultado" class="checarResultado">
 <!--id de parrafo con el mensaje cifrado-->
-          <p id="resultadoMensajeCifrado"></p>
+          <textarea id="resultadoMensajeCifrado" class="resultadoMensajeCifrado"></textarea>
       </div>
 <!--boton de limpiar la consola para volver a cifar-->
       <button onclick="location.reload();" class="btn_reload">INICIO</button>
+
+      <!--<input type="button" value="enviar" onclick="enviar()" class="enviar"/>-->
+
     </div>
 
     <!--hago mi id para descifrar el mensaje-->
@@ -79,9 +77,9 @@
     <!--boton de cifrar mi mensaje-->
           <button id="botonDescifrar" class="botonDescifrar"><img src="imagenes/descifrar.png"/></button>
     <!--me arroja el resultado en un parrafo-->
-          <div id="checarResultadoDescifrado" class="checarResultadoDescifrado">
+          <div>
     <!--id de parrafo con el mensaje cifrado-->
-              <p id="resultadoMensajeDescifrado"></p>
+              <textarea id="resultadoMensajeDescifrado" class="resultadoMensajeDescifrado"></textarea>
           </div>
     <!--boton de limpiar la consola para volver a cifar-->
           <button onclick="location.reload();" class="btn_reload">INICIO</button>
